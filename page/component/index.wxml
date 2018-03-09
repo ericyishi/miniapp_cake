@@ -1,0 +1,41 @@
+<view class="main">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{productlists.bannerPic}}" wx:key="{{index}}">
+      <navigator url="details/details?pid={{item.pid}}">
+      <swiper-item >
+       <image src="{{item.imgUrls}}" class="slide-image" width="100%" />
+      </swiper-item>
+       </navigator>
+    </block>
+  </swiper>
+  <view class="selected">
+    <view class="select-title">
+      <text>人气排行</text>
+    </view>
+    <view class="select-bottom">
+      <navigator url="list/list">
+        <image src="/image/ad.jpg"></image>
+      </navigator>
+    </view>
+  </view>
+  <view class="newest">
+    <view class="newest-title">
+      <text>最近新品</text>
+    </view>
+    <view class="newest-box">
+      <block wx:for="{{productlists.homelist}}"  wx:for-item="product" wx:key="*this">
+        <view class="newest-list">
+          <navigator url="details/details?pid={{product.pid}}" >
+            <image src="{{product.imgSrc}}"></image>
+            <view class="newest-text">
+              <text>{{product.title}}</text>
+            </view>
+            <view class="newest-text">
+              <text>￥{{product.price}}</text>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

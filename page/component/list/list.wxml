@@ -1,0 +1,21 @@
+<view class="main">
+  <view class="banner">
+    <image src="/image/list1.jpg"></image>
+  </view>
+
+  <view class="list-box">
+    <block  wx:for="{{productlists}}"  wx:for-item="product" wx:key="*this">
+      <view class="newest-list">
+        <navigator url="../details/details?pid={{product.pid}}">
+          <image src="{{product.imgSrc}}"></image>
+          <view class="newest-text">
+            <text>{{product.title}}</text>
+          </view>
+          <view class="newest-text">
+            <text>{{product.price}}</text>
+          </view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+</view>
