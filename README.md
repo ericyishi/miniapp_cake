@@ -1,15 +1,12 @@
 # 项目
 
-
 尝试微信小程序的开发
-
 
 
 # 示例
 
-![image](https://github.com/ericyishi/img-folder/blob/master/dataSystemPlatform.png)
-
-
+![image](https://github.com/ericyishi/img-folder/blob/master/cake/cake_1.gif)
+![image](https://github.com/ericyishi/img-folder/blob/master/cake/cake_2_shoppingCart.gif)
 
 
 
